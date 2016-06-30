@@ -1,5 +1,6 @@
 package com.example.hammerox.oxportfolio;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.Toast;
+
+import ru.katso.livebutton.LiveButton;
 
 public class AppListActivity extends AppCompatActivity {
 
@@ -17,6 +22,13 @@ public class AppListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_app_list);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+            findViewById(R.id.popular_movies).setOnClickListener(customListener());
+            findViewById(R.id.stock_hawk).setOnClickListener(customListener());
+            findViewById(R.id.build_it_bigger).setOnClickListener(customListener());
+            findViewById(R.id.make_app_material).setOnClickListener(customListener());
+            findViewById(R.id.go_ubiquitous).setOnClickListener(customListener());
+            findViewById(R.id.capstone).setOnClickListener(customListener());
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -48,5 +60,39 @@ public class AppListActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public View.OnClickListener customListener() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                LiveButton btn = (LiveButton) v;
+                Toast.makeText(AppListActivity.this, btn.getText(), Toast.LENGTH_LONG).show();
+
+                int id = v.getId();
+                switch (id) {
+                    case R.id.popular_movies:
+
+                        break;
+                    case R.id.stock_hawk:
+
+                        break;
+                    case R.id.build_it_bigger:
+
+                        break;
+                    case R.id.make_app_material:
+
+                        break;
+                    case R.id.go_ubiquitous:
+
+                        break;
+                    case R.id.capstone:
+
+                        break;
+                }
+            }
+        };
     }
 }
