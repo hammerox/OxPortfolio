@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,8 +12,129 @@
     tools:context="com.example.hammerox.oxportfolio.AppListActivity"
     tools:showIn="@layout/activity_app_list">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_list_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:padding="15dp"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:id="@+id/popular_movies"
+            android:text="Popular Movies"
+            xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/layoutWidth"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:layout_margin="@dimen/margin"
+            livebutton:corners="@dimen/corners"
+            livebutton:normalHeight="@dimen/normalHeight"
+            livebutton:pressedHeight="@dimen/pressedHeight"
+            livebutton:backgroundColor="@color/background"
+            livebutton:shadowColor="@color/shadow"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:id="@+id/stock_hawk"
+            android:text="Stock Hawk"
+            xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/layoutWidth"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:layout_margin="@dimen/margin"
+            livebutton:corners="@dimen/corners"
+            livebutton:normalHeight="@dimen/normalHeight"
+            livebutton:pressedHeight="@dimen/pressedHeight"
+            livebutton:backgroundColor="@color/background"
+            livebutton:shadowColor="@color/shadow"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:id="@+id/build_it_bigger"
+            android:text="Build it Bigger"
+            xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/layoutWidth"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:layout_margin="@dimen/margin"
+            livebutton:corners="@dimen/corners"
+            livebutton:normalHeight="@dimen/normalHeight"
+            livebutton:pressedHeight="@dimen/pressedHeight"
+            livebutton:backgroundColor="@color/background"
+            livebutton:shadowColor="@color/shadow"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:id="@+id/make_app_material"
+            android:text="Make Your App Material"
+            xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/layoutWidth"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:layout_margin="@dimen/margin"
+            livebutton:corners="@dimen/corners"
+            livebutton:normalHeight="@dimen/normalHeight"
+            livebutton:pressedHeight="@dimen/pressedHeight"
+            livebutton:backgroundColor="@color/background"
+            livebutton:shadowColor="@color/shadow"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:id="@+id/go_ubiquitous"
+            android:text="Go Ubiquitous"
+            xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/layoutWidth"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:layout_margin="@dimen/margin"
+            livebutton:corners="@dimen/corners"
+            livebutton:normalHeight="@dimen/normalHeight"
+            livebutton:pressedHeight="@dimen/pressedHeight"
+            livebutton:backgroundColor="@color/background"
+            livebutton:shadowColor="@color/shadow"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:id="@+id/capstone"
+            android:text="Capstone "
+            xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/layoutWidth"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:layout_margin="@dimen/margin"
+            livebutton:corners="@dimen/corners"
+            livebutton:normalHeight="@dimen/normalHeight"
+            livebutton:pressedHeight="@dimen/pressedHeight"
+            livebutton:backgroundColor="@color/background"
+            livebutton:shadowColor="@color/shadow"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
